@@ -48,7 +48,6 @@
 
 .avatar2 img {
   width:100%;
-  background-repeat: repeat-x;
 }
 
 .main {
@@ -58,19 +57,24 @@
 
 .card {
   position: relative;
-  width: 80%;
+  width: 60%;
+  max-height: 90%;
   top:5px;
   left: 10px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: 0.3s;
   text-align: center;
-  
+}
+
+.description{
+  padding-left: 20px;
+  text-align: left;
 }
 
 .input-container {
-  width: 50%;
+  width: 70%;
   font-size: 20px;
-  border: 1px;
+  box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 20px;
   margin: 10px;
   
@@ -88,13 +92,18 @@
   top:5px;
 }
 .comment-card {
-  display: grid;
-  grid-template-columns:1fr 1fr;
-  column-gap: 50px;
-  row-gap: 50px;
+  position: relative;
+  margin-top: 20px;
   padding: 25px 25px;
   width: 80%;
-  height: 40%;
   box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  text-align: center;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.faicons{
+  position: absolute;
+  right:10px;
+  cursor: pointer;
+  color: red;
 }
